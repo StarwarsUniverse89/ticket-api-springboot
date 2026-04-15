@@ -1,0 +1,53 @@
+### Create ticket
+POST http://localhost:8080/tickets
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "Service layer test",
+  "status": "OPEN"
+}
+
+### Get all tickets
+GET http://localhost:8080/tickets
+
+### Get one ticket
+GET http://localhost:8080/tickets/10
+
+### Update ticket
+PUT http://localhost:8080/tickets/10
+Content-Type: application/json
+
+{
+  "id": 10,
+  "title": "Service layer updated",
+  "status": "RESOLVED"
+}
+
+### Delete ticket
+DELETE http://localhost:8080/tickets/10
+
+###
+GET http://localhost:8080/tickets/999
+
+###
+POST http://localhost:8080/tickets
+Content-Type: application/json
+
+{
+  "id": 20,
+  "title": "",
+  "status": ""
+}
+###
+POST http://localhost:8080/tickets
+Content-Type: application/json
+
+{
+"id": 21,
+"title": "Validation works",
+"status": "OPEN"
+}
+
+###
+GET http://localhost:8080/tickets
