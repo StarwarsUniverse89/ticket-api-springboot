@@ -1,4 +1,4 @@
-package com.fmelgoza.apidemo.Controller;
+package com.fmelgoza.apidemo.controller;
 
 import com.fmelgoza.apidemo.model.Ticket;
 import com.fmelgoza.apidemo.service.TicketService;
