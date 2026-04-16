@@ -51,3 +51,12 @@ Content-Type: application/json
 
 ###
 GET http://localhost:8080/tickets
+
+###
+POST http://localhost:8080/tickets
+Content-Type: application/json
+
+{
+  "title": "Postgres test ticket",
+  "status": "OPEN"
+}

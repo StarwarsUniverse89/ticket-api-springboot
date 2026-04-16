@@ -1,6 +1,8 @@
 # Ticket Management API
 
-A Spring Boot REST API for managing support tickets.
+A production-style Spring Boot REST API for managing tickets, 
+featuring layered architecture, PostgreSQL integration, validation, 
+global exception handling, and Docker containerization.
 
 ## Features
 - Create, read, update, delete tickets
@@ -40,3 +42,14 @@ DELETE /tickets/{id}
   "title": "Login issue",
   "status": "OPEN"
 }
+
+## Run with Docker
+
+### Build the image
+docker build -t ticket-api .
+
+### Run the container
+docker run -p 8080:8080 \
+-e SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/ticketdb \
+-e SPRING_DATASOURCE_USERNAME=fmelgoza \
+ticket-api
