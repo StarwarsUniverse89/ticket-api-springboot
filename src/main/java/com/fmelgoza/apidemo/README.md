@@ -42,6 +42,7 @@ DELETE /tickets/{id}
   "title": "Login issue",
   "status": "OPEN"
 }
+```  
 
 ## Run with Docker
 
