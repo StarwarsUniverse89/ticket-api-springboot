@@ -52,5 +52,5 @@ docker build -t ticket-api .
 ### Run the container
 docker run -p 8080:8080 \
 -e SPRING_DATASOURCE_URL=jdbc:postgresql://host.docker.internal:5432/ticketdb \
--e SPRING_DATASOURCE_USERNAME=fmelgoza \
+-e SPRING_DATASOURCE_USERNAME="YOUR-USERNAME" \
 ticket-api
